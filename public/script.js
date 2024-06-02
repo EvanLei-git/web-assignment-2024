@@ -69,17 +69,27 @@ function registerBook() {
     const genre = document.getElementById('genre').value;
     const price = document.getElementById('price').value;
 
-    // Field Checks
-    if (!author || !title || !genre || !price) {
-        document.getElementById('error').textContent = 'Please fill all fields correctly.';
+    // Field Checks (i know i did the checks on the client's side...)
+    if (!author || author.length > 25) {
+        document.getElementById('error').textContent = 'Author must be filled and not exceed 25 characters.';
         document.getElementById('error').style.display = 'block';
         return;
-    } 
-    else if( isNaN(price)){
-        document.getElementById('error').textContent = 'Please only type a number for the Price';
-        document.getElementById('error').style.display = 'block';
-        return;       
     }
+    else if (!title || title.length > 40) {
+        document.getElementById('error').textContent = 'Title must be filled and not exceed 40 characters.';
+        document.getElementById('error').style.display = 'block';
+        return;
+    }
+    else if (!genre || genre.length > 20) {
+        document.getElementById('error').textContent = 'Genre must be filled and not exceed 20 characters.';
+        document.getElementById('error').style.display = 'block';
+        return;
+    }
+    else if (!price || isNaN(price)) {
+        document.getElementById('error').textContent = 'Please only type a number for the Price.';
+        document.getElementById('error').style.display = 'block';
+        return;
+    }   
     else {
         document.getElementById('error').style.display = 'none';
     }
