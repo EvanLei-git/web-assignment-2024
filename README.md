@@ -1,6 +1,6 @@
 # web-assignment-2024
 
-If you are interested you can [Click Here](https://rawcdn.githack.com/EvanLei-git/web-assignment-2024/a64c1d775cd1eab5350aa3c0f2d01f5d577becde/public/index.html) to look at the site's interface!
+If you are interested you can [Click Here](https://rawcdn.githack.com/EvanLei-git/web-assignment-2024/17f59dc41f48035a8351757492fd57dbeaabcf00/public/index.html) to look at the site's interface!
 
 ## How to Run
  ```
